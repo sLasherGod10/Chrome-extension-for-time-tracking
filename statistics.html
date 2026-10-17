@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TimeTrack Pro — Analytics</title>
+<script src="assets/modules/Chart.js"></script>
+<link rel="stylesheet" href="assets/style/statistics.css">
+<link href="assets/img/statistics.webp" rel="icon">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="side-brand" href="statistics.html"><span class="brand-symbol"><i></i><i></i><i></i></span><span>TimeTrack<small>PRO ANALYTICS</small></span></a>
+    <div class="side-label">WORKSPACE</div>
+    <a class="nav-item active" href="#overview"><span class="nav-icon">◫</span> Overview</a>
+    <a class="nav-item" href="#daily"><span class="nav-icon">⌁</span> Daily activity</a>
+    <a class="nav-item" href="#websites"><span class="nav-icon">◎</span> Websites</a>
+    <a class="nav-item" href="#rules"><span class="nav-icon">⚙</span> Tracking rules</a>
+    <div class="sidebar-bottom"><div class="privacy-icon">⌑</div><strong>Your data stays yours</strong><p>Usage data is stored locally in your browser.</p><span class="local-status"><b></b> Local tracking enabled</span></div>
+  </aside>
+  <main class="main-content" id="overview">
+    <header class="topbar"><div><div class="breadcrumb">WORKSPACE <span>/</span> ANALYTICS</div><h1>Your browsing, <span>in focus.</span></h1><p class="subtitle">Understand your habits. Make your screen time work for you.</p></div><div class="top-status"><span class="status-pulse"></span> TRACKING ACTIVE</div></header>
+    <section class="welcome-card">
+      <div class="welcome-copy"><span class="pill">YOUR DIGITAL WELLNESS</span><h2>Build a more mindful<br>relationship with the web.</h2><p>Explore your daily patterns, compare monthly activity, and fine-tune limits for individual websites.</p><a href="#daily" class="welcome-link">Explore activity <span>↘</span></a></div>
+      <div class="welcome-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb-core"><span>◷</span></div><div class="float-chip chip-top">FOCUS <b>↗</b></div><div class="float-chip chip-bottom"><span></span> YOUR DATA, YOUR CONTROL</div></div>
+    </section>
+    <section class="section-heading" id="daily"><div><span class="overline">ACTIVITY OVER TIME</span><h2>Usage analytics</h2></div><span class="section-note">Based on tracked browser activity</span></section>
+    <div class="chart-grid">
+      <section class="glass-card chart-card wide"><div class="card-heading"><div><span class="card-icon purple">⌁</span><h3>Daily usage</h3><p>Screen time by day · seconds shown as time</p></div><span class="card-tag">DAILY</span></div><div class="chart-wrap"><canvas id="dayWise" height="250"></canvas></div></section>
+      <section class="glass-card chart-card wide"><div class="card-heading"><div><span class="card-icon blue">▥</span><h3>Monthly usage</h3><p>How your screen time changes month to month</p></div><span class="card-tag">MONTHLY</span></div><div class="chart-wrap"><canvas id="monthWise" height="250"></canvas></div></section>
+      <section class="glass-card chart-card website-card" id="websites"><div class="card-heading"><div><span class="card-icon teal">◎</span><h3>Website breakdown</h3><p>Where your time goes</p></div><span class="card-tag">BY SITE</span></div><div class="chart-wrap donut-wrap"><canvas id="siteWise" height="280"></canvas></div></section>
+    </div>
+    <section class="glass-card rules-card" id="rules"><div class="card-heading"><div><span class="card-icon pink">⚙</span><h3>Tracking rules</h3><p>Choose how TimeTrack handles each website</p></div><span class="card-tag">SETTINGS</span></div><div class="table-responsive-md"><table class="table"><thead><tr><th>#</th><th>WEBSITE / HOST</th><th>TIME LIMIT</th><th>TRACKING MODE</th></tr></thead><tbody></tbody></table></div><div class="table-foot"><span class="local-status"><b></b> Changes save automatically</span><span>Stored in this browser</span></div></section>
+    <footer class="page-footer"><span>TimeTrack Pro</span><span>Designed for more mindful browsing</span><a href="#overview">Back to top ↑</a></footer>
+  </main>
+</div>
+<script src="assets/js/statistics.js"></script>
+</body>
+</html>

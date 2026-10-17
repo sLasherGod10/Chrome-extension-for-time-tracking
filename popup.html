@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeTrack — Focus at a glance</title>
+  <link rel="stylesheet" href="assets/style/popup.css">
+</head>
+<body>
+  <main class="popup-shell">
+    <header class="brand-row">
+      <div class="brand-mark"><span></span><span></span><span></span></div>
+      <div><p class="eyebrow">YOUR DIGITAL WELLNESS</p><h1>TimeTrack<span class="pro"> PRO</span></h1></div>
+      <span class="live-dot" title="Tracking status"></span>
+    </header>
+    <section class="hero-card">
+      <div class="hero-glow"></div>
+      <div class="section-kicker"><span class="pulse"></span> CURRENT SITE SESSION</div>
+      <div class="time-used" aria-label="Time tracked">
+        <div class="time-unit hour">--</div><span class="colon">:</span>
+        <div class="time-unit minute">--</div><span class="colon">:</span>
+        <div class="time-unit second">--</div>
+      </div>
+      <div class="time-labels"><span>HOURS</span><span>MINUTES</span><span>SECONDS</span></div>
+      <p class="session-caption">Time spent on the active website</p>
+    </section>
+    <div class="tip-row"><div class="tip-icon">✦</div><p><strong>Stay intentional.</strong><br><span>Small check-ins make screen time count.</span></p></div>
+    <button id="statisticsButton" class="dashboard-button"><span class="button-icon">↗</span><span>Open analytics dashboard</span><span class="button-arrow">→</span></button>
+    <footer><span class="footer-dot"></span> Tracking locally on this device <span class="footer-version">V 1.1</span></footer>
+  </main>
+  <script type="module" src="assets/js/popup.js"></script>
+</body>
+</html>
